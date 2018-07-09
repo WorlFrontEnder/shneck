@@ -58,6 +58,10 @@ $(document).ready(function(){
       e.preventDefault();
     });
 
+    $('.open-popup-link_form1').magnificPopup({
+      type:'inline',
+      midClick: true
+    });
     $('.open-popup-link_form').magnificPopup({
       type:'inline',
       midClick: true
