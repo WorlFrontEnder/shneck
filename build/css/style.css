@@ -1,39 +1,3 @@
-*{
-  -moz-box-sizing: border-box;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
- }
-
-html, body{
- height: 100%;
- background-color: #fff;
- font-family: 'MuseoSansCyrl-500';
- font-weight: normal;
- font-size: 16px;
-min-width: 300px;
-}
-a{
-  outline: none;
-  text-decoration: none;
-  }
-img{
-  outline: none;
-  max-width: 100%;
-  border:none;
- }
-ul{
-  list-style: none;
-}
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-
 /*##########
 START HEADER
 ############*/
@@ -1350,6 +1314,10 @@ START ASK
 .mobil__btn{
   display: none;
 }
+.header__menu, 
+.header__phone{
+  display: block;
+}
 
 /*##############
 START RESPONSIVE
@@ -1424,7 +1392,11 @@ START RESPONSIVE
   }
 }
 
-
+@media (min-width: 1201px) {
+  .header__menu, .header__phone {
+    display: block !important;
+ }
+}
 
 @media (max-width: 1200px) {
   .mobil__btn{
